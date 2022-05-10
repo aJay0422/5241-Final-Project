@@ -76,3 +76,6 @@ The prediction accuracy we achieved is shown below:
 |    CNN    |   100%    |  89.62%   |  91.02%  |
 | DoubleCNN |   100%    |  91.42%   |  92.28%  |
 |   AEclf   |   100%    |   100%    |  98.40%  |
+
+
+For more details, please refer to https://github.com/aJay0422/5241-Final-Project
