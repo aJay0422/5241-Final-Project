@@ -19,6 +19,7 @@ testloader = data.DataLoader(testset, batch_size=20)
 
 
 ## Models
+All models are available in the `models.py` file.
 ### Single digit prediction
 We used 3 different models for digits classification. They are NN(feedforward neural network 
 with 1 hidden layer), CNN(convolutional neural network with 2 convolutional layers) and 
@@ -33,7 +34,7 @@ criterion = nn.CrossEntropy()
 model, training_record, best_state = train(model, EPOCHS, trainloader, testloader, optimizer, criterion)
 ```
 
-The `train` function here not only trains the given model, but also record training and testing loss and 
+The `train` function here is available in the `train.py` file. It not only trains the given model, but also record training and testing loss and 
 accuracy during the training process. Meanwhile, it records the best model state according to the testloader.
 
 The prediction accuracy we achieved is shown below:
@@ -50,7 +51,8 @@ For digits sum prediction, we used NN, CNN and DoubleCNN to directly predict the
 trained an autoencoder to extract features from a single-digit image.  
 Based on the image encoder and MNIST 
 dataset, we trained a single-digit classifier. Then we use that classifier to predict digits from the double-
-digits image and do the sum operation by hand.
+digits image and do the sum operation by hand. Here is an example of how we trained the autoencoder and use it as
+a basic classifier to predict digits sum.
 
 ```python
 EPOCHS = 40
